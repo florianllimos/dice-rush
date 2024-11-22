@@ -195,3 +195,42 @@ function changePlayer (notFalse) {
         }
     }
 }  
+
+// ATTRIBUTION EVENTS
+
+let change = document.getElementById('hold');
+change.addEventListener("click", changePlayer, null);
+
+let game = document.getElementById('game-start');
+game.addEventListener("click", gameNew, null);
+
+// NOUVELLE PARTIE
+
+function gameNew () {
+    player1 = 0;
+    player2 = 0;
+    totalP1 = 0;
+    totalP2 = 0;
+    
+    document.getElementById('winner').innerHTML = '';
+    diceClear();
+    
+    document.getElementById('currentP1').innerHTML = player1;
+    document.getElementById('currentP2').innerHTML = player2;
+    document.getElementById('player1').innerHTML = totalP1;
+    document.getElementById('player2').innerHTML = totalP2;
+
+    change.addEventListener("click", changePlayer, null);
+    diceTruc.addEventListener("click", randomDice, null);
+}
+
+// NETTOYER LE DICE
+
+function diceClear () {
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+    ctx.beginPath();
+    ctx.fillStyle = 'white';
+    ctx.fillRect(0, 0, 120, 120);
+    ctx.fill();
+}
