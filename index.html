@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DiceRush</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="media/de.png" />
+    </head>
+    <body>
+        <main>
+            <div class="game-container">
+                <div class="containerOne"></div>
+                <div class="containerTwo"></div>
+                <div class="new-game">  
+                    <h2><button  class="start-game" id="game-start">
+                        <img src="media/bouton-de-lecture-rond.png" class="img">
+                    <span class="none">Nouvelle partie</span></button></h2>
+                </div>
+                <div class="playerOne">
+                    <h3 id="p-1" class="play">Joueur 1</h3>
+                    <p id="player1">0</p>
+                </div>
+                <div id="winner"></div>
+                <div class="playerTwo">
+                    <h3 id="p-2">Joueur 2</h3>
+                    <p id="player2">0</p>
+                </div>
+                <div class="current-de" id="dice">
+                    <canvas width="120px" height="120px" id="canvas"></canvas>
+                </div>
+                <div class="game-roll">
+                    <h2><button id="roll">
+                        <img src="media/de.png" class="img big">
+                        <span class="none">Tirer</span></button></h2>
+                </div>
+                <div class="current-one">
+                    <p class="current-text">Courant</p>
+                    <p class="current-score-p" id="currentP1">0</p>
+                </div> 
+                <div class="game-hold">
+                    <h2 class="btn-hold"><button id="hold">
+                        <img src="media/hand.png" class="img big">
+                        <span class="none">Changer</span></button></h2>
+                </div>
+                <div class="current-two">
+                    <p class="current-text">Courant</p>
+                    <p class="current-score-p" id="currentP2">0</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container-home-social-link" role="navigation" aria-label="Liens vers les réseaux sociaux">
+                <ul role="menu" class="ul-social-link">
+                  <li role="menuitem">
+                    <a href="https://www.instagram.com/f.lmss/?hl=fr" aria-label="Lien vers mon profil Instagram" title="Lien vers mon profil Instagram" target="_blank">
+                      <img src="media/instagram.png" id="instagram" alt="Icône Instagram" title="Instagram">
+                    </a>
+                  </li>  
+                  <li role="menuitem">
+                    <a href="https://www.facebook.com/florian.llimos/" aria-label="Lien vers mon profil Facebook" title="Lien vers mon profil Facebook" target="_blank">
+                      <img src="media/facebook.png" id="facebook" alt="Icône Facebook" title="Facebook">
+                    </a>
+                  </li>
+                  <li role="menuitem">
+                    <a href="https://fr.linkedin.com/in/florian-llimos-a27944231" aria-label="Lien vers mon profil LinkedIn" title="Lien vers mon profil LinkedIn" target="_blank">
+                      <img src="media/linkedin.png" id="linkedin" alt="Icône LinkedIn" title="LinkedIn">
+                    </a>
+                  </li>
+                  <li role="menuitem">
+                    <a href="https://github.com/florianllimos" aria-label="Lien vers mon profil GitHub" title="Lien vers mon profil GitHub" target="_blank">
+                      <img src="media/github.png" id="github" alt="Icône GitHub" title="GitHub">
+                    </a>
+                  </li>
+                  <li role="menuitem">
+                    <a href="https://codepen.io/llimosf-the-sasster" aria-label="Lien vers mon profil Codepen" title="Lien vers mon profil Codepen" target="_blank">
+                      <img src="media/codepen.png" id="codepen" alt="Icône Codepen" title="Codepen">
+                    </a>
+                  </li>
+                  <li role="menuitem">
+                    <a href="tel:0622005584" aria-label="Lien pour me téléphoner" title="Lien pour me téléphoner">
+                      <img src="media/telephone.png" id="telephone" alt="Icône téléphone" title="téléphone">
+                    </a>
+                  </li>
+                  <li role="menuitem">
+                    <a href="mailto:llimosflorian1@gmail.com" aria-label="Lien pour m'envoyer un e-mail" title="Lien pour m'envoyer un e-mail">
+                      <img src="media/mail.png" id="mail" alt="Icône e-mail" title="E-mail">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <p>Copyright 2024 Florian Llimos</p>
+            </footer>
+    <script src="script.js"></script>
+</body>
+</html>
